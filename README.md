@@ -10,3 +10,4 @@ To add new a function is added in app.py to add more customers.
 
 if a customer is not in that data and try to add review will result as fake review.
 
+![image](https://github.com/user-attachments/assets/20b75978-20de-436b-8d3b-36843660d9ab)
