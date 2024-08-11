@@ -7,7 +7,7 @@ import base64
 
 
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
