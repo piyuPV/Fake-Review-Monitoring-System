@@ -29,8 +29,8 @@ def set_background(png_file):
 set_background('bg.jpg')
 
 
-model = joblib.load('Fake-Review-Monitoring-System/senti_model_rf.h5')
-v = joblib.load('Fake-Review-Monitoring-System/v.h5')
+model = joblib.load('./senti_model_rf.h5')
+v = joblib.load('./v.h5')
 
 def pred(sentence):
     input = v.transform([sentence])
@@ -99,7 +99,7 @@ def register():
         if not name or not product or not bill:
             st.error("Please fill in all fields.")
         else:
-            with open("customer_data.txt", "a") as file:
+            with open("./customer_data.txt", "a") as file:
                 file.write(f"Name: {name.lower()}, Product: {product.lower()}, Bill ID: {bill}\n")
             
             st.success("Information submitted successfully!")
