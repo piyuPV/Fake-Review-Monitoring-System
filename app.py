@@ -52,7 +52,7 @@ def fake_analysis():
     if st.button("Check"):
         if user and prod and review and n:
             found = False
-            with open("customer_data.txt", "r") as file:
+            with open("Fake-Review-Monitoring-System/customer_data.txt", "r") as file:
                 for line in file:
                     
                     if (f"Name: {user.lower()}" in line and 
