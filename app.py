@@ -29,8 +29,8 @@ def set_background(png_file):
 set_background('bg.jpg')
 
 
-model = joblib.load('senti_model_rf.h5')
-v = joblib.load('v.h5')
+model = joblib.load('Fake-Review-Monitoring-System/senti_model_rf.h5')
+v = joblib.load('Fake-Review-Monitoring-System/v.h5')
 
 def pred(sentence):
     input = v.transform([sentence])
